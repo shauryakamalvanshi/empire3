@@ -148,7 +148,7 @@ export default function ContactForm() {
                 />
               </Switch>
             </div>
-            <Switch.Label className="text-sm leading-6 text-gray-600"></Switch.Label>
+
           </Switch.Group>
         </div>
         <div className="mt-10">
