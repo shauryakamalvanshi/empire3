@@ -1,22 +1,18 @@
-
-"use client"
-import { useState } from 'react'
-import { Switch } from '@headlessui/react'
+"use client";
+import { useState } from 'react';
+import { Switch } from '@headlessui/react';
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(' ');
 }
 
 export default function ContactForm() {
-  const [agreed, setAgreed] = useState(false)
-  const [fname,setFname]=useState();
-  const [lname,setLname]=useState();
-  const [email,setEmail]=useState();
-  const [phone,setPhone]=useState();
-  const [message,setMessage]=useState();
- 
-  
-
+  const [agreed, setAgreed] = useState(false);
+  const [fname, setFname] = useState();
+  const [lname, setLname] = useState();
+  const [email, setEmail] = useState();
+  const [phone, setPhone] = useState();
+  const [message, setMessage] = useState();
 
   return (
     <div className="isolate bg-red px-6 py-24 sm:py-32 lg:px-8 ">
@@ -26,11 +22,10 @@ export default function ContactForm() {
       >
         <div
           className="relative left-1/2 -z-10  bg-red-800"
-         
         />
       </div>
       <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Contact us</h2>    
+        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Contact us</h2>
       </div>
       <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
@@ -45,10 +40,9 @@ export default function ContactForm() {
                 id="first-name"
                 autoComplete="given-name"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                onChange={(e)=>{
-setFname(e.target.value);
+                onChange={(e) => {
+                  setFname(e.target.value);
                 }}
-
               />
             </div>
           </div>
@@ -63,13 +57,12 @@ setFname(e.target.value);
                 id="last-name"
                 autoComplete="family-name"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                onChange={(e)=>{
+                onChange={(e) => {
                   setLname(e.target.value);
-                                  }}
+                }}
               />
             </div>
           </div>
-        
           <div className="sm:col-span-2">
             <label htmlFor="email" className="block text-sm font-semibold leading-6 text-gray-900">
               Email
@@ -81,10 +74,10 @@ setFname(e.target.value);
                 id="email"
                 autoComplete="email"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                onChange={(e)=>{
+                onChange={(e) => {
                   setEmail(e.target.value);
-                                  }}
-             />
+                }}
+              />
             </div>
           </div>
           <div className="sm:col-span-2">
@@ -105,7 +98,6 @@ setFname(e.target.value);
                   <option>CA</option>
                   <option>EU</option>
                 </select>
-             
               </div>
               <input
                 type="tel"
@@ -113,10 +105,10 @@ setFname(e.target.value);
                 id="phone-number"
                 autoComplete="tel"
                 className="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                onChange={(e)=>{
+                onChange={(e) => {
                   setPhone(e.target.value);
-                                  }}
-             />
+                }}
+              />
             </div>
           </div>
           <div className="sm:col-span-2">
@@ -130,9 +122,9 @@ setFname(e.target.value);
                 rows={4}
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 defaultValue={''}
-                onChange={(e)=>{
+                onChange={(e) => {
                   setMessage(e.target.value);
-                                  }}
+                }}
               />
             </div>
           </div>
@@ -156,10 +148,7 @@ setFname(e.target.value);
                 />
               </Switch>
             </div>
-            <Switch.Label className="text-sm leading-6 text-gray-600">
-
-         </Switch.Label>
-
+            <Switch.Label className="text-sm leading-6 text-gray-600"></Switch.Label>
           </Switch.Group>
         </div>
         <div className="mt-10">
@@ -172,5 +161,5 @@ setFname(e.target.value);
         </div>
       </form>
     </div>
-  )
+  );
 }
