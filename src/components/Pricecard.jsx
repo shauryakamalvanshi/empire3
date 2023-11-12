@@ -78,7 +78,8 @@ const PricingCard = (params) => {
                 {params.ml10}              </li>
               <li className="flex items-center">
                 {/* Additional list items */}
-                {params.ml11}              </li>
+                {params.ml11}        
+                      </li>
             </ul>
            
           </section>
@@ -110,7 +111,8 @@ const PricingCard = (params) => {
               </li>
               <li className="flex items-center">
               {params.pl6}                {/* Additional list items */}
-              </li> <li className="flex items-center">
+              </li> 
+              <li className="flex items-center">
               {params.pl7}                {/* Additional list items */}
               </li>
               <li className="flex items-center">

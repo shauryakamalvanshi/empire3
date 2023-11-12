@@ -1,4 +1,7 @@
 
+
+
+
 import Image from 'next/image'
 
 const features = [
@@ -38,7 +41,7 @@ export default function Wcu() {
           <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
           Our Services
           </p>
-          <p className="mt-6 text-lg leading-8 text-white0">
+          <p className="mt-6 text-lg leading-8 text-white">
           Whether you're looking for turnkey solutions to manage digital assets or web services specific to your business requirements, we've got you covered.
           </p>
         </div>

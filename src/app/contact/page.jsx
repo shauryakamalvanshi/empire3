@@ -2,7 +2,7 @@ import React from 'react'
 import ContactForm from '@/components/Contactform'
 import styles from "@/styles/contact.module.css"
 import Image from 'next/image'
-import { Fullscreen } from '@mui/icons-material'
+// import { Fullscreen } from '@mui/icons-material'
 
 const page = () => {
   return (

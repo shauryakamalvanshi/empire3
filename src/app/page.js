@@ -1,6 +1,6 @@
 import Hero from '@/components/Herosection'
 // import Image from 'next/image'
-import Herosection from '@/components/Herosection'
+// import Herosection from '@/components/Herosection'
 
 import Wcu from "@/components/Wcu"
 

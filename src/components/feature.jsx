@@ -1,32 +1,33 @@
 "use client"
-import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
+
+import Image from 'next/image'
 
 const features = [
   {
     name: 'Strategy.',
     description:
       'Lay the groundwork for success with strategic planning',
-    icon: "./strategy.png",
+    icon: "/strategy.png",
   },
   {
     name: 'Design and specification.',
     description: 'Creativity meets precision in our design phase.',
-    icon: "./ux.png",
+    icon: "/ux.png",
   },
   {
     name: 'produdtion and desigred result.',
     description: 'Code becomes reality with our skilled developers at work',
-    icon: "./project.png",
+    icon: "/project.png",
   },
   {
     name: 'Registration with ISP.',
     description: 'Navigate ISP intricacies to secure seamless digital accessibility.',
-    icon: "./website.png",
+    icon: "/website.png",
   },
   {
     name: 'Launch.',
     description: 'Orchestrate a grand unveiling, propelling your creation into the digital cosmos.',
-    icon: "./rocket.png",
+    icon: "/rocket.png",
   },
 ]
 
@@ -47,7 +48,7 @@ export default function Feature() {
                   <div key={feature.name} className="relative pl-9">
                     <dt className="inline font-semibold text-gray-900">
                       {/* <feature.icon  /> */}
-                      <img src={feature.icon} alt="ggg" className="absolute left-0 top-2 h-8 w-8 text-indigo-600" aria-hidden="true"/>
+                      <Image src={feature.icon} width={1000} height={100} alt="ggg" className="absolute left-0 top-2 h-8 w-8 text-indigo-600" aria-hidden="true"/>
                       {feature.name}
                     </dt>{' '}
                     <dd className="inline">{feature.description}</dd>
