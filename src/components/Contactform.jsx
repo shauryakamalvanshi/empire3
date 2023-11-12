@@ -1,7 +1,6 @@
 
 "use client"
 import { useState } from 'react'
-import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { Switch } from '@headlessui/react'
 
 function classNames(...classes) {
@@ -161,12 +160,9 @@ setFname(e.target.value);
               </Switch>
             </div>
             <Switch.Label className="text-sm leading-6 text-gray-600">
-              By selecting this, you agree to our{' '}
-              <div className="font-semibold text-indigo-600">
-                privacy&nbsp;policy
-              </div>
-              .
-            </Switch.Label>
+
+         </Switch.Label>
+
           </Switch.Group>
         </div>
         <div className="mt-10">

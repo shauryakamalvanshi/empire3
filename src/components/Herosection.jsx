@@ -1,11 +1,12 @@
 "use client"
 import React, { useState } from "react";
+import Image from "next/image";
 
 
 const Hero = () => {
   return (
     <>
-      <Navbar />
+     
       <div className="relative  pb-[110px] pt-[120px] bg-gradient-to-t from-cyan-200 to-cyan-400 lg:pt-[150px] ">
         <div className="container">
           <div className="-mx-4  flex flex-wrap ">
@@ -25,7 +26,7 @@ const Hero = () => {
                   </h6>
 
                   <div className="flex items-center space-x-4">
-                    <SingleImage
+                    {/* <SingleImage
                       href="#"
                       imgSrc="https://cdn.tailgrids.com/2.0/image/assets/images/brands/ayroui.svg"
                     />
@@ -38,7 +39,7 @@ const Hero = () => {
                     <SingleImage
                       href="#"
                       imgSrc="https://cdn.tailgrids.com/2.0/image/assets/images/brands/uideck.svg"
-                    />
+                    /> */}
                   </div>
                 </div>
               </div>
@@ -47,7 +48,9 @@ const Hero = () => {
             <div className="w-full px-4 lg:w-6/12">
               <div className="lg:ml-auto lg:text-right">
                 <div className="pr-10 relative z-10 inline-block pt-11 lg:pt-0 max-lg:flex max-lg:justify-center max-lg:align-middle max-lg:p-0">
-                  <img
+                  <Image
+                  width={500}
+                  height={800}
                     src="/hero-image-01.png"
                     alt="hero"
                     className="max-w-full lg:ml-auto"
@@ -99,53 +102,29 @@ const Hero = () => {
 
 export default Hero;
 
-const SingleImage = ({ href, imgSrc }) => {
-  return (
-    <>
-      <a href={href} className="flex w-full items-center justify-center">
-        <img src={imgSrc} alt="brand image" className="h-10 w-full" />
-      </a>
-    </>
-  );
-};
+// const SingleImage = ({ href, imgSrc }) => {
+//   return (
+//     <>
+//       <a href={href} className="flex w-full items-center justify-center">
+//         <Image src={imgSrc} width={1000} height={100} alt="brand image" className="h-10 w-full" />
+//       </a>
+//     </>
+//   );
+// };
 
-const Navbar = () => {
-  const [open, setOpen] = useState(false);
 
-  return (
-    <header className={`absolute left-0 top-0 z-20 flex w-full items-center`}>
-      <div className="container">
-        <div className="relative -mx-4 flex items-center justify-between">
-          <div className="w-60 max-w-full px-4">
-            <a href="/#" className="block w-full py-5">
-             
-             
-            </a>
-          </div>
-          
-            <div>
-            
-             
-            </div>
-          
-          </div>
-        </div>
-    
-    </header>
-  );
-};
 
-const ListItem = ({ children, NavLink }) => {
-  return (
-    <>
-      <li>
-        <a
-          href={NavLink}
-          className="flex py-2 text-base font-medium text-dark hover:text-primary dark:text-white lg:ml-10 lg:inline-flex"
-        >
-          {children}
-        </a>
-      </li>
-    </>
-  );
-};
+// const ListItem = ({ children, NavLink }) => {
+//   return (
+//     <>
+//       <li>
+//         <a
+//           href={NavLink}
+//           className="flex py-2 text-base font-medium text-dark hover:text-primary dark:text-white lg:ml-10 lg:inline-flex"
+//         >
+//           {children}
+//         </a>
+//       </li>
+//     </>
+//   );
+// };

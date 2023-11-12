@@ -10,9 +10,9 @@ const Footer = () => {
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
               <div className="mb-10 w-full">
-                <a href="/#" className="mb-6 inline-block max-w-[160px]">
+                <div className="mb-6 inline-block max-w-[160px]">
                   <h1 className="text-xl font-bold">The Empire tech</h1>
-                </a>
+                </div>
                 <p className="mb-7 text-base text-body-color dark:text-gray-800">
                   Sed ut perspiciatis undmnis is iste natus error sit amet
                   voluptatem totam rem aperiam.
@@ -35,39 +35,50 @@ const Footer = () => {
 
             <LinkGroup header="Resources" className="p-0">
             <Link href={"/web"}>
-              <NavLink  label="Website Development" />
+            
+              <h1 className="inline-block text-black leading-loose text-body-color hover:text-primary dark:text-dark-6">Website Development</h1>
               </Link>
               <Link href={"/app"}>
-              <NavLink label="Application Development" />
+             
+              <h1 className="inline-block text-black leading-loose text-body-color hover:text-primary dark:text-dark-6">Application Development</h1>
               </Link>
+              <br />
               <Link href={"/seo"}>
-              <NavLink  label="SEO" />
+            
+              <h1 className="inline-block text-black leading-loose text-body-color hover:text-primary dark:text-dark-6">SEO</h1>
               </Link>
+              <br />
               <Link href={"/wordpress"}>
-              <NavLink  label="Wordpress Site" />
+            
+              <h1 className="inline-block text-black leading-loose text-body-color hover:text-primary dark:text-dark-6">Wordpress Site</h1>
               </Link>
             </LinkGroup>
 
             <LinkGroup header="Company">
             <Link href={"/about"}>
-              <NavLink label="About Us" />
+              <h1 className="inline-block text-black leading-loose text-body-color hover:text-primary dark:text-dark-6">About Us</h1>
               </Link>
-              <Link href={"/contact"}>
-              <NavLink  label="Contact & Support" />
+              <br />
+              <Link href={"/contact"}>  
+              <h1 className="inline-block text-black leading-loose text-body-color hover:text-primary dark:text-dark-6">Contact & Support</h1>
               </Link>
+              <br />
+              <Link href={"/about"}>    
+              <h1 className="inline-block text-black leading-loose text-body-color hover:text-primary dark:text-dark-6">Success History</h1>
+              </Link>
+              <br />
               <Link href={"/about"}>
-              <NavLink  label="Success History" />
+              <h1 className="inline-block text-black leading-loose text-body-color hover:text-primary dark:text-dark-6">Setting & Privacy</h1>
               </Link>
-              <Link href={"/about"}>
-              <NavLink label="Setting & Privacy" />
-              </Link>
+              <br />
             </LinkGroup>
             <LinkGroup header="Quick Links">
             <Link href={"/app"}>
-              <NavLink link="/#" label="Pricing" />
+            <h1 className="inline-block text-black leading-loose text-body-color hover:text-primary dark:text-dark-6">Pricing</h1>
               </Link>
+              <br />
               <Link href={"/"}>
-              <NavLink link="/#" label="Our Services" />
+              <h1 className="inline-block text-black leading-loose text-body-color hover:text-primary dark:text-dark-6">Our Services</h1>
               </Link>
               {/* <NavLink link="/#" label="Know Our Team" /> */}
               {/* <NavLink link="/#" label="Download App" /> */}
@@ -97,7 +108,7 @@ const Footer = () => {
                   {/* Add more social media links as needed */}
                 </div>
                 <p className="text-base text-body-color dark:text-gray-600">
-                  &copy; 2025 TailGrids
+                  &copy; 2025 TET
                 </p>
               </div>
             </div>

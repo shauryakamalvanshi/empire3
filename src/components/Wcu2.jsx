@@ -3,6 +3,10 @@ import React from "react";
 import Image from "next/image";
 
 const About1 = (params) => {
+  const handleClick = () => {
+    // Your click event logic here
+    console.log("Button clicked!");
+  };
   return (
     <>
       <section className="overflow-hidden pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] bg-white dark:bg-dark">
@@ -14,7 +18,7 @@ const About1 = (params) => {
                   <div className="py-3 sm:py-4">
                     <Image
                     width={1000} height={1000} 
-                      src="https://i.ibb.co/gFb3ns6/image-1.jpg"
+                      src="/image-1.jpg"
                       alt=""
                       className="w-full rounded-2xl"
                     />
@@ -22,7 +26,7 @@ const About1 = (params) => {
                   <div className="py-3 sm:py-4">
                     <Image
                     width={1000} height={1000} 
-                      src="https://i.ibb.co/rfHFq15/image-2.jpg"
+                      src="/hero-image-01.png"
                       alt=""
                       className="w-full rounded-2xl"
                     />
@@ -32,7 +36,7 @@ const About1 = (params) => {
                   <div className="relative z-10 my-4">
                     <Image
                     width={1000} height={1000} 
-                      src="https://i.ibb.co/9y7nYCD/image-3.jpg"
+                      src="/image-3.jpg"
                       alt=""
                       className="w-full rounded-2xl"
                     />
@@ -625,12 +629,12 @@ const About1 = (params) => {
                 <p className="mb-8 text-base text-body-color text-black">
               {params.desc2}
                 </p>
-                <a
-                  href="javascript:void(0)"
-                  className="inline-flex items-center justify-center py-3 text-base font-medium text-center text-white border border-transparent rounded-md px-7 bg-primary hover:bg-opacity-90"
-                >
-                  Get Started
-                </a>
+                <button
+        onClick={handleClick}
+        className="inline-flex items-center justify-center py-3 text-base font-medium text-center text-white border border-transparent rounded-md px-7 bg-primary hover:bg-opacity-90"
+      >
+        Get Started
+      </button>
               </div>
             </div>
           </div>
