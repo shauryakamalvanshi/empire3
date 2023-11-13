@@ -1,16 +1,17 @@
 "use client"
 import React, { useState } from "react";
 import Image from "next/image";
+import styles from "@/styles/hero.module.css"
 
 
 const Hero = () => {
   return (
     <>
-     
+     <div className={styles.main}>
       <div className="relative  pb-[110px] pt-[120px] bg-gradient-to-t from-cyan-200 to-cyan-400 lg:pt-[150px] ">
         <div className="container">
           <div className="-mx-4  flex flex-wrap ">
-            <div className="w-full h-9px-4 lg:w-5/12 ">
+            <div className="w-fulloverflow-hidden h-9px-4 lg:w-5/12 ">
               <div className="hero-content m-4 mt-0  max-lg:flex max-lg:justify-center max-lg:align-middle max-lg:flex-col ">
                 <h1 className="font-semibold p-auto m-3 mb-5 text-7xl font-serif !leading-[1.208] text-black   max-lg:flex max-lg:justify-center max-lg:align-middle">
                 Turning your <br /> ideas into <br />online realities
@@ -53,7 +54,7 @@ const Hero = () => {
                   height={800}
                     src="/hero-image-01.png"
                     alt="hero"
-                    className="max-w-full lg:ml-auto"
+                    className="max-w-full lg:ml-auto overflow-hidden"
                   />
                   <span className="absolute -bottom-8 -left-8 z-[-1]">
                     <svg
@@ -95,6 +96,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </>
   );
