@@ -617,16 +617,16 @@ const About1 = (params) => {
 
             <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
               <div className="mt-10 lg:mt-0">
-                <span className="block mb-4 text-5xl font-semibold text-primary text-black">
+                <span className="flex justify-center block mb-4 text-5xl font-bold font-serif text-primary text-black">
                  {params.head}
                 </span>
-                <h2 className="mb-5 text-sm font-bold text-dark text-black sm:text-[30px]/[48px]">
+                <h2 className=" mb-5 text-base flex justify-center text-sm font-bold text-dark text-black sm:text-[30px]/[48px]">
                   {params.head1}
                 </h2>
-                <p className="mb-5 text-base text-body-color text-black">
+                <p className="text-lg flex justify-center mb-5 text-base text-body-color text-black">
 {params.desc}
                 </p>
-                <p className="mb-8 text-base text-body-color text-black">
+                <p className="mb-8 text-lg text-base text-body-color text-black">
               {params.desc2}
                 </p>
                 <button

@@ -11,6 +11,8 @@ const page = () => {
     <div className="map h-fit  ">
       <Image src="/Screenshot.png" width={2000} height={90} alt="map" className='rounded-lg' />
     </div>
+
+    <div className={styles.low}>
     <div className="flex max-lg:flex-col ">
     <div className="ml-auto mr-auto mt-40 w-1/2 max-lg:flex max-lg:flex-col max-lg:items-center border-gray-200	">
     <h1 className='text-6xl  ml-10 mx  max-lg:text-4xl'>Get in touch</h1>
@@ -25,7 +27,7 @@ const page = () => {
 <a href="#" class="mt-8 block max-w-sm p-6 bg-white  rounded-lg shadow hover:bg-gray-100 bg-white  ">
 
 <h5 class="mb-2 text-2xl font-bold tracking-tight  text-black">Phone</h5>
-<p class="font-normal text-gray-700 dark:text-gray-400">Your phone..............................</p>
+<p class="font-normal text-gray-700 dark:text-gray-400">+1 3077763097</p>
 </a>
 
 
@@ -40,6 +42,7 @@ const page = () => {
       <ContactForm></ContactForm>
       </div>
       </div>
+    </div>
     </div>
     </div>
   )

@@ -25,12 +25,12 @@ const TeamSection = () => {
               <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
                 <Image alt="team" width={1000} height={1000} className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="/ux.png" />
                 <div className="flex-grow">
-                  <h2 className="text-gray-900 title-font font-medium">Satyam Samele</h2>
+                  <h2 className="text-gray-900 title-font font-medium">Amit Singh</h2>
                   <p className="text-gray-500">President</p>
                 </div>
               </div>
             </div>
-            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+            {/* <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
               <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
                 <Image alt="team" width={1000} height={1000} className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="/ux.png" />
                 <div className="flex-grow">
@@ -38,7 +38,7 @@ const TeamSection = () => {
                   <p className="text-gray-500">CFO</p>
                 </div>
               </div>
-            </div>
+            </div> */}
       {/* <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
         <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
           <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/90x90"/>

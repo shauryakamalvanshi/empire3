@@ -31,6 +31,9 @@ const page = () => {
         <h1 className="text-6xl text-black">Our Pricing</h1>
       </div>
       <PricingCard
+       plan1="Basic"
+       plan2="Silver"
+       plan3="Gold"
         cust1="Simple app development"
         cust2="Medium complexity app development"
         cust3="Complex app development "

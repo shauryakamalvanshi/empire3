@@ -8,7 +8,7 @@ import About1 from "@/components/Wcu2"
 import styles from "@/styles/home.module.css"
 import Card from "@/components/Homecard"
 import Feature from '@/components/feature'
-
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -21,6 +21,7 @@ export default function Home() {
 <Wcu></Wcu>
 <Feature></Feature>
 <Card></Card>
+
 
 {/* <Footer></Footer> */}
 </div>

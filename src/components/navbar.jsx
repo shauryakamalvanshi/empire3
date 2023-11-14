@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Dropdown from "./Dropdown"
+import Image from "next/image";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -16,7 +17,18 @@ const Navbar = () => {
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <Link href="/">
             <div className="flex items-center">
-              <div className="h-8 mr-3 text-black text-xl font-bold " alt="Flowbite Logo">The Empire technology</div>
+              <div className="h-8 mr-3 text-black text-xl font-bold " alt="Flowbite Logo">
+              The Empire Technologies
+                {/* <Image
+                src={"/icon.png"}
+                height={200}
+                width={1000}
+                alt="ico"
+                className="h-25 w-60 mb-100"
+                
+                ></Image> */}
+               
+              </div>
             </div>
           </Link>
           <button

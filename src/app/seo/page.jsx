@@ -2,6 +2,7 @@ import React from "react";
 import Phases from "@/components/phases";
 import PricingCard from "@/components/Pricecard";
 import Image from "next/image";
+import Seoprice from "@/components/Seoprice";
 
 const page = () => {
   return (
@@ -31,18 +32,21 @@ const page = () => {
         cust1="Ideal for a small team."
         cust2="Ideal for individual developers."
         cust3="For large bussiness"
+        plan1="Basic"
+        plan2="Silver"
+        plan3="Gold"
         price1="$499/monthh"
         price2="$699/month"
-        price3="$899/month"
+        price3="$1000/month"
         bl1="Standard SEO audit and implementation"
         bl2="Analytics integration and basic monitoring"
-        bl3="Keyword optimization for up to 20 pages"
+        bl3="Keyword optimization for up to 30 pages"
         bl4="Quarterly reports and feature updates"
         bl5="Email and chat support during business hours"
         bl6="Onboarding and training resources"
         ml1="Advanced SEO audit, strategy, and implementation"
         ml2="Enhanced analytics with A/B testing capabilities"
-        ml3="Keyword optimization for up to 30 pages"
+        ml3="Keyword optimization for up to 40 pages"
         ml4="Regular monitoring, vulnerability assessments, and malware removal"
         ml5="Bi-annual feature updates and industry trend reports"
         ml6="Access to exclusive webinars and training sessions"
@@ -54,6 +58,19 @@ const page = () => {
         pl5="Dedicated account manager and strategic SEO consultation"
         pl6="Priority support with a 24-hour response time"
       ></PricingCard>
+      <div className="sm:flex sm:justify-center sm:overflow-hidden">
+      <Seoprice   cust1="Ideal for a small team."
+        cust3="For large bussiness"
+        plan="Premium"
+        
+        price3="$1799/month"
+        pl1="Comprehensive SEO audit and strategy"
+        pl2="Advanced analytics integration and continuous monitoring"
+        pl3="Keyword research and optimization for unlimited pages"
+        pl4="Monthly reports and performance reviews"
+        pl5="Dedicated account manager and strategic SEO consultation"
+        pl6="Priority support with a 24-hour response time"></Seoprice>
+        </div>
     </>
   );
 };

@@ -6,7 +6,7 @@ const PricingCard = (params) => {
       <div className="relative items-center w-full px-8 py-24 mx-auto md:px-12 lg:px-16 max-w-7xl">
         <div className="grid max-w-2xl grid-cols-1 -mx-4 gap-y-10 sm:mx-auto lg:max-w-none lg:grid-cols-3 xl:gap-x-4 lg:-mx-8">
           <section className="flex flex-col px-6 sm:px-8 lg:py-8">
-            <h3 className="mt-5 text-lg text-black">Basic</h3>
+            <h3 className="mt-5 text-2xl text-black font-serif">{params.plan1}</h3>
             <p className="mt-2 text-sm text-gray-500">
             {params.cust1}
 
@@ -37,7 +37,7 @@ const PricingCard = (params) => {
           </section>
 
           <section className="flex flex-col order-first px-6 py-8 bg-black rounded-3xl sm:px-8 lg:order-none">
-            <h3 className="mt-5 text-lg text-white">Team</h3>
+            <h3 className="mt-5 text-2xl text-white font-serif">{params.plan2}</h3>
             <p className="mt-2 text-sm text-gray-100">
             {params.cust2}
             </p>
@@ -85,7 +85,7 @@ const PricingCard = (params) => {
           </section>
 
           <section className="flex flex-col px-6 sm:px-8 lg:py-8">
-            <h3 className="mt-5 text-lg text-black">Premium</h3>
+            <h3 className="mt-5 text-2xl text-black font-serif">{params.plan3}</h3>
             <p className="mt-2 text-sm text-gray-500">
             {params.cust3}
             </p>
@@ -131,6 +131,7 @@ const PricingCard = (params) => {
             </ul>
           
           </section>
+       
         </div>
       </div>
     </section>

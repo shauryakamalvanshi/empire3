@@ -11,7 +11,17 @@ const Footer = () => {
             <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
               <div className="mb-10 w-full">
                 <div className="mb-6 inline-block max-w-[160px]">
-                  <h1 className="text-xl font-bold">The Empire tech</h1>
+                  <h1 className="text-xl font-bold">   
+                  {/* <Image
+                src={"/icon.png"}
+                height={200}
+                width={1000}
+                alt="ico"
+                className="h-25 w-60 mb-100"
+                
+                ></Image> */}
+                The Empire Technologies
+               </h1>
                 </div>
                 <p className="mb-7 text-base text-body-color dark:text-gray-800">
                   Sed ut perspiciatis undmnis is iste natus error sit amet
@@ -28,7 +38,7 @@ const Footer = () => {
                       {/* SVG path for phone icon */}
                     </svg>
                   </span>
-                  <span>+012 (345) 678 99</span>
+                  <span>+1 3077763097</span>
                 </p>
               </div>
             </div>
