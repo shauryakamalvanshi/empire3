@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
           width={1000}
           height={90}
           alt='www'
-          className="fixed bottom-10 right-14 text-blue-500 h-18 w-20 "
+          className="fixed bottom-10 right-14 text-blue-500 h-18 w-20 max-sm:w-11 "
           style={{ zIndex: 9999 }} 
         ></Image>
         </Link>
