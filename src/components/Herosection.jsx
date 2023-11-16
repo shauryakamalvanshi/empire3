@@ -2,53 +2,38 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import styles from "@/styles/hero.module.css"
-
+import Link from "next/link";
 
 const Hero = () => {
   return (
     <>
-     <div className={styles.main}>
-      <div className="relative  pb-[110px] pt-[120px] bg-gradient-to-t from-cyan-200 to-cyan-400 lg:pt-[150px] ">
-        <div className="container">
-          <div className="-mx-4  flex flex-wrap ">
-            <div className="w-fulloverflow-hidden h-9px-4 lg:w-5/12 ">
-              <div className="hero-content m-4 mt-0  max-lg:flex max-lg:justify-center max-lg:align-middle max-lg:flex-col ">
-                <h1 className="font-semibold p-auto m-3 mb-5 text-7xl font-serif !leading-[1.208] text-black   max-lg:flex max-lg:justify-center max-lg:align-middle">
-                Turning your <br /> ideas into <br />online realities
-                </h1>
-                <p className="m-5 mb-2 max-w-[480px] text-lg text-body-color text-slate-600 font-mono">
+    <div className={styles.main}>
+      {/* <div className="relative  pb-[110px] pt-[120px]  lg:pt-[150px] "> */}
+      <div className="relative  flex justify-evenly pt-24 max-lg:flex max-lg:flex-col bg-gradient-to-t from-cyan-200 to-cyan-400 max-h-full  ">
+        <div className="flex flex-col p-8 max-lg:flex max-lg:justify-center max-lg:items-center">
+            <h1 className="flex flex-col text-6xl font-black leading-none text-gray-800 uppercase font-bebas-neue sm:text-8xl mb-10">
+              <span className="text-6xl bold leading-none font-bebas-neue max-md:text-5xl max-[466px]:text-4xl"> Turning your </span> 
+                <span className="text-4xl max-md:text-2xl">ideas into online</span>
+                <span className="text-9xl max-md:text-7xl">realities</span>  
+            </h1>
+            <p className=" max-w-[480px] text-2xl text-body-color text-slate-600 font-mono text-2xl mb-10 max-sm:text-lg">
                 Code,design,launch,we do it all
                 </p>
+                <div className="flex p-auto p-auto mt-8">
+                  <Link href={"/contact"}>
+        <div className="px-5 py-3 mr-5 text-white uppercase bg-pink-500 border-2 border-transparent rounded-lg text-lg hover:bg-pink-400">
+          Contact us
+        </div>
+        </Link>
+        <div className="px-5 py-3 text-pink-500 uppercase bg-transparent border-2 border-pink-500 rounded-lg dark:text-white hover:bg-pink-500 hover:text-white text-lg">
+          Read more
+        </div>
+      </div>
+         
             
-                <div className="clients pt-16">
-                  <h6 className="mb-6 flex items-center text-xs font-normal text-body-color dark:text-dark-6 ml-5">
-                    Some Of Our Clients
-                    <span className="ml-3 inline-block h-px w-8 bg-body-color"></span>
-                  </h6>
-
-                  <div className="flex items-center space-x-4">
-                    {/* <SingleImage
-                      href="#"
-                      imgSrc="https://cdn.tailgrids.com/2.0/image/assets/images/brands/ayroui.svg"
-                    />
-
-                    <SingleImage
-                      href="#"
-                      imgSrc="https://cdn.tailgrids.com/2.0/image/assets/images/brands/graygrids.svg"
-                    />
-
-                    <SingleImage
-                      href="#"
-                      imgSrc="https://cdn.tailgrids.com/2.0/image/assets/images/brands/uideck.svg"
-                    /> */}
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="hidden px-4 lg:block lg:w-1/12"></div>
-            <div className="w-full px-4 lg:w-6/12">
-              <div className="lg:ml-auto lg:text-right">
-                <div className="pr-10 relative z-10 inline-block pt-11 lg:pt-0 max-lg:flex max-lg:justify-center max-lg:align-middle max-lg:p-0">
+        </div>
+        <div className="flex justify-center  ">
+        <div className="p-3 relative z-10 inline-block flex justify-center  lg:pt-0 max-lg:flex max-lg:justify-center max-lg:items-center ">
                   <Image
                   width={500}
                   height={800}
@@ -56,77 +41,13 @@ const Hero = () => {
                     alt="hero"
                     className="max-w-full lg:ml-auto overflow-hidden"
                   />
-                  <span className="absolute -bottom-8 -left-8 z-[-1]">
-                    <svg
-                      width="93"
-                      height="93"
-                      viewBox="0 0 93 93"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <circle cx="2.5" cy="2.5" r="2.5" fill="#3056D3" />
-                      <circle cx="2.5" cy="24.5" r="2.5" fill="#3056D3" />
-                      <circle cx="2.5" cy="46.5" r="2.5" fill="#3056D3" />
-                      <circle cx="2.5" cy="68.5" r="2.5" fill="#3056D3" />
-                      <circle cx="2.5" cy="90.5" r="2.5" fill="#3056D3" />
-                      <circle cx="24.5" cy="2.5" r="2.5" fill="#3056D3" />
-                      <circle cx="24.5" cy="24.5" r="2.5" fill="#3056D3" />
-                      <circle cx="24.5" cy="46.5" r="2.5" fill="#3056D3" />
-                      <circle cx="24.5" cy="68.5" r="2.5" fill="#3056D3" />
-                      <circle cx="24.5" cy="90.5" r="2.5" fill="#3056D3" />
-                      <circle cx="46.5" cy="2.5" r="2.5" fill="#3056D3" />
-                      <circle cx="46.5" cy="24.5" r="2.5" fill="#3056D3" />
-                      <circle cx="46.5" cy="46.5" r="2.5" fill="#3056D3" />
-                      <circle cx="46.5" cy="68.5" r="2.5" fill="#3056D3" />
-                      <circle cx="46.5" cy="90.5" r="2.5" fill="#3056D3" />
-                      <circle cx="68.5" cy="2.5" r="2.5" fill="#3056D3" />
-                      <circle cx="68.5" cy="24.5" r="2.5" fill="#3056D3" />
-                      <circle cx="68.5" cy="46.5" r="2.5" fill="#3056D3" />
-                      <circle cx="68.5" cy="68.5" r="2.5" fill="#3056D3" />
-                      <circle cx="68.5" cy="90.5" r="2.5" fill="#3056D3" />
-                      <circle cx="90.5" cy="2.5" r="2.5" fill="#3056D3" />
-                      <circle cx="90.5" cy="24.5" r="2.5" fill="#3056D3" />
-                      <circle cx="90.5" cy="46.5" r="2.5" fill="#3056D3" />
-                      <circle cx="90.5" cy="68.5" r="2.5" fill="#3056D3" />
-                      <circle cx="90.5" cy="90.5" r="2.5" fill="#3056D3" />
-                    </svg>
-                  </span>
+            
                 </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-      </div>
+    </div>
+    </div> 
     </>
   );
 };
 
 export default Hero;
-
-// const SingleImage = ({ href, imgSrc }) => {
-//   return (
-//     <>
-//       <a href={href} className="flex w-full items-center justify-center">
-//         <Image src={imgSrc} width={1000} height={100} alt="brand image" className="h-10 w-full" />
-//       </a>
-//     </>
-//   );
-// };
-
-
-
-// const ListItem = ({ children, NavLink }) => {
-//   return (
-//     <>
-//       <li>
-//         <a
-//           href={NavLink}
-//           className="flex py-2 text-base font-medium text-dark hover:text-primary dark:text-white lg:ml-10 lg:inline-flex"
-//         >
-//           {children}
-//         </a>
-//       </li>
-//     </>
-//   );
-// };
